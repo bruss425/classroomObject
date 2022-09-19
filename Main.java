@@ -10,6 +10,14 @@ class Main {
     one.tellColor();
     one.changeColor("Yellow");
     System.out.println(one);
+
+    two.close();
+    two.open();
+    System.out.println(two);
+
+    three.tellColor();
+    three.changeColor("Pink");
+    System.out.println(three);
     
     
   }
