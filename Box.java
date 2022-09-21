@@ -2,7 +2,13 @@ public class Box {
   private boolean isFull;
   private boolean isOpen;
   private String color;
+  private Projector projector; //not done 
 
+
+  public Box(Projector espon){
+    this();
+    projector = espon; // new 
+  }
   public Box(){
     color = "white"; 
     isFull = false;
@@ -41,6 +47,9 @@ public class Box {
     return "Color: " + color + ", Is it open?: " + isOpen + ", Is it full? " + isFull;
  
       }
+    public void use(){
+      System.out.println("I am using the projector! " + projector);
+    }
   }
 
   

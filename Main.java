@@ -5,7 +5,14 @@ class Main {
     Box two = new Box("red");
     Box three = new Box ("blue", true, false);
     
-    one.close();
+    Projector p1 = new Projector(4,true,true);
+    Box four = new Box(p1); // new 
+    //where is his toString();
+    
+    System.out.println(four);
+    four.use();
+
+    /*one.close();
     one.open();
     one.tellColor();
     one.changeColor("Yellow");
@@ -18,7 +25,7 @@ class Main {
     three.tellColor();
     three.changeColor("Pink");
     System.out.println(three);
-    
+    */
     
   }
 }
